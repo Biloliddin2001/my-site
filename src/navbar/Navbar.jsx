@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="hidden md:block mt-6">
                 <ul className='flex justify-between'>
                     <li className='pr-5 text-lg cursor-pointer hover:text-white'><Link to="/">Home</Link></li>
-                    <li className='pr-5 text-lg cursor-pointer hover:text-white'><Link to="/my_images">My Images</Link></li>
+                    <li className='pr-5 text-lg cursor-pointer hover:text-white'><Link to="/my_images">Link 1</Link></li>
                     <li className='pr-5 text-lg cursor-pointer hover:text-white'><Link to="/about">About</Link></li>
                     <div className="relative bottom-3">
                         <button className='text-black py-3 px-6 ml-2'><Link to="/login">Sign In</Link></button>
@@ -33,7 +33,7 @@ const Navbar = () => {
                 { isOpen && 
                     <ul className='block ml-3 mr-3 md:hidden'>
                         <li className='pr-5 pt-2 text-2xl text-center pt-3 cursor-pointer hover:text-indigo-500'><Link to="/">Home</Link></li>
-                        <li className='pr-5 pt-2 text-2xl text-center pt-3 cursor-pointer hover:text-indigo-500'><Link to="/my_images">My Image</Link></li>
+                        <li className='pr-5 pt-2 text-2xl text-center pt-3 cursor-pointer hover:text-indigo-500'><Link to="/my_images">Link</Link></li>
                         <li className='pr-5 pt-2 text-2xl text-center pt-3 cursor-pointer hover:text-indigo-500'><Link to="/about">About</Link></li>
                         <div className="mt-2">
                             <button className='text-black block w-full py-3 px-6 mt-5'><Link to="/login">Sign In</Link></button>
