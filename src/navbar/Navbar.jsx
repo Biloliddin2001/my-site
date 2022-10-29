@@ -26,7 +26,7 @@ const Navbar = () => {
             </div>
             {/* DropDown Menu */}
             <button className='text-black px-5 block md:hidden' onClick={toggle}>
-                { !isOpen ?  <AiOutlineMenu className='text-2xl'/> :  <AiOutlineClose className='text-2xl'/>}
+                { !isOpen ?  <AiOutlineMenu className='text-2xl text-white' /> :  <AiOutlineClose className='text-2xl text-white' />}
             </button>
         </div>
         <div className="bg-zinc-200 drop-shadow-xl">
