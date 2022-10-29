@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <>
-        000000000
+       
         <div className="bg-sky-400 md:drop-shadow-xl mt-1 h-[80px] flex justify-around z-10 animNav">
             <div className="mt-4">
                 <h1 className='text-2xl mt-1 font-bold text-white md:text-3xl'><Link to="/">Bilol_Dev</Link></h1>
