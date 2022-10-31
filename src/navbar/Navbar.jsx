@@ -9,39 +9,30 @@ const Navbar = () => {
 
     return (
         <>
-        <div className="bg-sky-400 md:drop-shadow-xl mt-1 h-[80px] flex justify-around z-10 animNav">
-            <div className="mt-4">
-                <h1 className='text-2xl mt-1 font-bold text-white md:text-3xl'><Link to="/">Bilol_Dev</Link></h1>
-            </div>
-            <div className="hidden md:block mt-6">
-                <ul className='flex justify-between'>
-                    <li className='pr-5 text-lg cursor-pointer hover:text-white'><Link to="/">Home</Link></li>
-                    <li className='pr-5 text-lg cursor-pointer hover:text-white'><Link to="/api/users">Api</Link></li>
-                    <li className='pr-5 text-lg cursor-pointer hover:text-white'><Link to="/about">About</Link></li>
-                    <div className="relative bottom-3">
-                        <button className='text-black py-3 px-6 ml-2'><Link to="/login">Sign In</Link></button>
-                        <button className='bg-sky-600 py-3 px-6 transition ml-5 text-white'><Link to="/login">Sign Up</Link></button>
-                    </div>
-                </ul>
-            </div>
-            {/* DropDown Menu */}
-            <button className='text-black px-5 block md:hidden' onClick={toggle}>
-                { !isOpen ?  <AiOutlineMenu className='text-2xl text-white' /> :  <AiOutlineClose className='text-2xl text-white' />}
-            </button>
-        </div>
-        <div className="bg-zinc-200 drop-shadow-xl">
-                { isOpen && 
-                    <ul className='block ml-3 mr-3 md:hidden'>
-                        <li className='pr-5  text-2xl text-center pt-3 cursor-pointer hover:text-indigo-500'><Link to="/">Home</Link></li>
-                        <li className='pr-5  text-2xl text-center pt-3 cursor-pointer hover:text-indigo-500'><Link to="/api/users">Api</Link></li>
-                        <li className='pr-5  text-2xl text-center pt-3 cursor-pointer hover:text-indigo-500'><Link to="/about">About</Link></li>
-                        <div className="mt-2">
-                            <button className='text-black block w-full py-3 px-6 mt-5'><Link to="/login">Sign In</Link></button>
-                            <button className='block w-full py-3 px-6 transition bg-indigo-500 mt-3 mb-5 text-white'><Link to="/login">Sign Up</Link></button>
+            <header className="h-[80px] md:flex flex justify-evenly md:justify-around  w-full bg-zinc-100 drop-shadow-lg mb-1 sticky mt-[10px] top-[1px] animNav">
+                <div className="logo mt-[23px]">
+                    <Link to="/" className='text-3xl font-bold'>Bilol.tj</Link>
+                </div>
+                <nav className="nav mt-[27px] md:block hidden">
+                    <ul className="items flex">
+                        <Link to="/"><li className='text-lg pl-[20px] text-black cursor-pointer hover:text-blue-600'>Home</li></Link>
+                        <Link to="api/users"><li className='text-lg pl-[20px] text-black cursor-pointer'>Api</li></Link>
+                        <Link><li className='text-lg pl-[20px] text-black cursor-pointer'>About</li></Link>
+                        <Link><li className='text-lg pl-[20px] text-black cursor-pointer'>Help</li></Link>
+                        <div className="flex relative top-[-5.8px] left-2 justify-end">
+                            <button id='btn-color' className='py-2 px-4 rounded-md text-black hover:bg-indigo-500'>Sign In</button>
+                            <button className='ml-3 py-2 px-4 rounded-md bg-indigo-500'>Sign up</button>
                         </div>
                     </ul>
-                }
-            </div>
+                </nav>
+                <div className="btns mt-4 block md:hidden">
+                    { isOpen ? 
+                        <button onClick={toggle}><AiOutlineMenu  className='text-3xl text-black'/></button> : 
+                        <button onClick={toggle}><AiOutlineClose className='text-3xl text-black'/></button>
+                    }
+                </div>
+
+            </header>
         </>
     )
 }

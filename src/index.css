@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-
     button {
-        @apply text-white
-        hover:bg-transparent hover:text-indigo-600 rounded-md
+        @apply hover:bg-transparent transition hover:text-black text-white rounded-md
     }
+}
+header  #btn-color:hover {
+    color: white;
 }
 .animNav {
     animation: animNav 0.5s ease;

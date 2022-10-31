@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <>
             <Navbar />
-            <div className='md:flex p-10 md:mr-[100px] md:ml-[100px] md:mt-7 justify-around rounded-xl slide-home-content'>
+            <div className='md:flex p-10 md:mr-[100px] md:ml-[100px] md:mt-7 justify-around rounded-xl slide-home-content md:h-auto'>
                 {/* for Image */}
                 <div className="mt-0 mb-3 md:mb-1">
                     <img src={ MyImage } width="350" alt="My Image" title='Biloliddin' className='rounded-3xl md:w-[360px]' />
