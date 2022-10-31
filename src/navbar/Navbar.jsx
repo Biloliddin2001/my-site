@@ -9,11 +9,11 @@ const Navbar = () => {
 
     return (
         <>
-            <header className="h-[80px] md:flex flex justify-evenly md:justify-around  w-full bg-zinc-100 drop-shadow-lg mb-1 sticky mt-[10px] top-[1px] animNav">
-                <div className="logo mt-[23px]">
-                    <Link to="/" className='text-3xl font-bold'>Bilol.tj</Link>
+            <header className="md:h-[80px] h-[60px] md:flex flex justify-between pr-5 pl-5 md:justify-around  w-full bg-zinc-100 drop-shadow-lg mb-1 sticky mt-[10px] top-[1px] animNav">
+                <div className="logo md:mt-[23px] mt-[15px]">
+                    <Link to="/" className='md:text-3xl text-lg font-bold'>Bilol.tj</Link>
                 </div>
-                <nav className="nav mt-[27px] md:block hidden">
+                <nav className="nav-menu-toggle mt-[27px] md:block hidden">
                     <ul className="items flex">
                         <Link to="/"><li className='text-lg pl-[20px] text-black cursor-pointer hover:text-blue-600'>Home</li></Link>
                         <Link to="api/users"><li className='text-lg pl-[20px] text-black cursor-pointer'>Api</li></Link>
@@ -25,10 +25,10 @@ const Navbar = () => {
                         </div>
                     </ul>
                 </nav>
-                <div className="btns mt-4 block md:hidden">
-                    { isOpen ? 
-                        <button onClick={toggle}><AiOutlineMenu  className='text-3xl text-black'/></button> : 
-                        <button onClick={toggle}><AiOutlineClose className='text-3xl text-black'/></button>
+                <div className="btns md:mt-4 mt-[20px] block md:hidden">
+                    { !isOpen ? 
+                        <button id='aioutlineMenu' onClick={toggle}><AiOutlineMenu  className='md:text-3xl text-2xl text-black'/></button> : 
+                        <button id='aioutlineClose' onClick={toggle}><AiOutlineClose className='md:text-3xl text-2xl text-black'/></button>
                     }
                 </div>
 
