@@ -26,7 +26,7 @@ export default class Api extends Component {
     return (
       <>
         <Navbar />
-        <div className="container mt-1">
+        <div className="container mt-4">
             <table className='table table-hover text-center table-bordered'>
                 <thead className='thead table-dark'>
                     <tr>
