@@ -64,7 +64,7 @@ header  #btn-color:hover {
     }
 }
 @media only screen and (min-width: 768px) {
-    #aioutlineClose {
+    .btns > #aioutlineClose {
         display: block;
     }
 }

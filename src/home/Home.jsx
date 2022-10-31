@@ -17,7 +17,7 @@ const Home = () => {
                     <img src={ MyImage } width="350" alt="My Image" title='Biloliddin' className='rounded-3xl md:w-[360px]' />
                 </div>
                 {/* for deskription */}
-                <div className="ml-1 mt-2 p-5 md:p-3 md:mt-0 bg-zinc-200 rounded-3xl">
+                <div className="ml-1 mt-2 p-3 md:p-3 md:mt-0 bg-zinc-200 rounded-3xl">
                     <h1 className='title md:text-3xl md:mt-5 md:ml-5 ml-[5px] mr-[5px] text-[18px] mb-1 font-bold'>Hey, I`m Biloliddin Shokirhojaev</h1>
                     <div className="ml-[5px] mr-[5px] mt-2 mb-4 md:ml-5 md:mt-6">I'm Biloliddin, Frontent Web-Developer in React-js and Back-end in Djando-REST. <br />
                         I'm 21-old, live in Dushanbe-Tajikistan <AiFillHeart className='inline-block text-red-600' />
