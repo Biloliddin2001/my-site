@@ -25,7 +25,7 @@ const Home = () => {
             </div>
              */}
             <div className="home-page w-full mt-3 flex md:flex-col flex-col">
-                <h2 className='md:ml-[30px] text-4xl ml-3 md:text-[100px] font-bold slide-one'>O1</h2>
+                <h2 className='md:ml-[30px] text-4xl ml-3 md:text-[100px] font-bold slide-one md:mt-4'>O1</h2>
                 <p className='md:w-1/2 md:pl-[14px] m-3 md:pt-8 slide-two'>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae perferendis cumque est animi, dicta dolore error repudiandae itaque iste enim earum aliquid quisquam, quibusdam sed quia corporis impedit accusamus! Minus.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam qui saepe sequi iste animi quae doloribus ut repellendus voluptas explicabo ea quibusdam eaque molestias placeat eum laborum mollitia, iure at!
