@@ -4,6 +4,7 @@ import About from './about/About'
 import Api from './api/apis'
 import Photos from './api/photos'
 import Home from './home/Home'
+import Loader from './loader/loader_page'
 import Page_Not_Found from './page_not/Page_not_found'
 import PortFolio from './portfolio/Portfolio'
 import Login from './register/login'
@@ -21,6 +22,7 @@ function App() {
         <Route path='/api' element={ <Api />} />
         <Route path='/api/photos' element={<Photos />} />
         <Route path='*' element={ <Page_Not_Found />} />
+        {/* <Route path='/loader/' element={ <Loader />} /> */}
       </Routes>
     </BrowserRouter>
   </>
