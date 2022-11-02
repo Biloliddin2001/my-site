@@ -30,7 +30,7 @@ const Home = () => {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae perferendis cumque est animi, dicta dolore error repudiandae itaque iste enim earum aliquid quisquam, quibusdam sed quia corporis impedit accusamus! Minus.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam qui saepe sequi iste animi quae doloribus ut repellendus voluptas explicabo ea quibusdam eaque molestias placeat eum laborum mollitia, iure at!
                 </p>
-                <div className="line md:ml-[30px] md:h-[28px] md:mt-3 ml-[15px] md:w-[200px] bg-black w-[100px] h-[15px] slide-two"></div>
+                <div className="line md:ml-[30px] md:h-[28px] md:mt-3 ml-[15px] md:w-[200px] bg-black w-[150px] h-[15px] slide-two"></div>
                 <h1 className='md:text-[80px] md:ml-[30px] font-bold text-[38px] ml-3 mt-2 slide-three'>We dwelling elegance do shutters appetide yourself diverted.</h1>
             </div>
         </>
