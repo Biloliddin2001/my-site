@@ -27,7 +27,7 @@ const Navbar = () => {
 
                 <div className="md:hidden block mr-4 mt-3">
                     { !isOpen ? 
-                       <button onClick={toggle}><AiOutlineMenu /></button> : <button onClick={toggle}><AiOutlineClose /></button>
+                       <button onClick={toggle}><AiOutlineMenu className='text-2xl'  /></button> : <button onClick={toggle}><AiOutlineClose  className='text-2xl' /></button>
                     }
                     
                 </div>
