@@ -14,13 +14,6 @@ export default class Api extends Component {
             console.log(res)
             this.setState({ posts: res})
         })
-    //     // .then(res => {
-    //     //     if(res.ok) {
-    //     //         console.log('Success')
-    //     //     } else {
-    //     //         console.log("Not Success")
-    //     //     }
-    //     // })
     }
   render() {
     return (

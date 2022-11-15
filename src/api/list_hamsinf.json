@@ -1,0 +1,155 @@
+ [
+    {
+        "id": 1,
+        "surname": "Abduqayumov",
+        "name": "Askar",
+        "national": "tojik",
+        "live": "sh.Konibodom",
+        "phone": "918-47-88-81",
+        "email": "askarabduaumov@gmail.com"
+    },
+    {
+        "id": 2,
+        "surname": "Azizulloi",
+        "name": "Safarali",
+        "national": "tojik",
+        "live": "sh.Kulob",
+        "phone": "911-05-33-00",
+        "email": "darkor nest"
+    },
+    {
+        "id": 3,
+        "surname": "Boistov",
+        "name": "AliAkbar",
+        "national": "tojik",
+        "live": "n.Mastchoh",
+        "phone": 902000899,
+        "email": "nest"
+    },
+    {
+        "id": 4,
+        "surname": "MamadSaloev",
+        "name": "MamadSalo",
+        "national": "tojik",
+        "live": "n.Rushon",
+        "phone": 931952762,
+        "email": "nest"
+    },
+    {
+        "id": 5,
+        "surname": "Nigmonov",
+        "name": "Subhon",
+        "national": "tojik",
+        "live": "n.Rasht",
+        "phone": 933403222,
+        "email": "nest"
+    },
+    {
+        "id": 6,
+        "surname": "Nosirov",
+        "name": "Suhrob",
+        "national": "tojik",
+        "live": "sh.Panjakent",
+        "phone": "927620237",
+        "email": "nest"
+    },
+    {
+        "id": 7,
+        "surname": "Odinazoda",
+        "name": "Bunyod",
+        "national": "tojik",
+        "live": "n.Hamadoni",
+        "phone": "987836383",
+        "email": "nest"
+    },
+    {
+        "id": 8,
+        "surname": "Razikov",
+        "name": "Siyovush",
+        "national": "tojik",
+        "live": "sh.Dushanbe",
+        "phone": "988368757",
+        "email": "nest"
+    },
+    {
+        "id": 9,
+        "surname": "Rasulova",
+        "name": "Mutahira",
+        "national": "tojik",
+        "live": "sh.Isfara",
+        "phone": "9267704**",
+        "email": "nest"
+    },
+    {
+        "id": 10,
+        "surname": "Rahmatzoda",
+        "name": "MuhammadShoh",
+        "national": "tojik",
+        "live": "n.Mastchoh",
+        "phone": "9929898272",
+        "email": "nest"
+    },
+    {
+        "id": 11,
+        "surname": "Salehov",
+        "name": "Dilshod",
+        "national": "tojik",
+        "live": "sh.Dushanbe",
+        "phone": "908806685",
+        "email": "nest"
+    },
+    {
+        "id": 12,
+        "surname": "Samieva",
+        "name": "Jahonoro",
+        "national": "tojik",
+        "live": "n.Ayni",
+        "phone": "9261117**",
+        "email": "nest"
+    },
+    {
+        "id": 13,
+        "surname": "Safarov",
+        "name": "Muhriddin",
+        "national": "tojik",
+        "live": "sh.Tursunzoda",
+        "phone": "002557701",
+        "email": "nest"
+    },
+    {
+        "id": 14,
+        "surname": "Khabibov",
+        "name": "Jahongir",
+        "national": "tojik",
+        "live": "n.Varzob",
+        "phone": "000044643",
+        "email": "nest"
+    },
+    {
+        "id": 15,
+        "surname": "Kholov",
+        "name": "Usmon",
+        "national": "tojik",
+        "live": "n.Rudaki",
+        "phone": "988863339",
+        "email": "nest"
+    },
+    {
+        "id": 16,
+        "surname": "Shokirkhojaev",
+        "name": "Biloliddin",
+        "national": "uzbek",
+        "live": "n.Shahrinav",
+        "phone": "911076776",
+        "email": "bilolsh01@gmail.com"
+    },
+    {
+        "id": 17,
+        "surname": "Emomalizoda",
+        "name": "Jamoliddin",
+        "national": "tojik",
+        "live": "sh.Kulob",
+        "phone": "915888782",
+        "email": "nest"
+    }
+]

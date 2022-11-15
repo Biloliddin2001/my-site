@@ -8,6 +8,7 @@
 } */
 header  #btn-color:hover {
     color: white;
+
 }
 .animNav {
     animation: animNav 0.5s ease;
@@ -28,40 +29,12 @@ header  #btn-color:hover {
 .forms {
     animation: slide-create-account 0.7s ease;
 }
-
-.loading-page {
-    background-color: black;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: none 2s ease;
+body {
+    /* background-image: url("./assets//body.jpg"); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: 10px; */
 }
-
-.loader-page{
-    font-size: 48px;
-    color: #FFF;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    position: relative;
-  }
-  .loader-page:before{
-    content: '';
-    animation: 1s print linear alternate infinite;
-  }
-  .loader-page:after{
-    content: '';
-    position: absolute;
-    right: -4px;
-    top: 50%;
-    transform: translatey(-45%);
-    width: 2px;
-    height: 1.3em;
-    background: currentColor;
-    opacity: 0.8;
-    animation: 1s blink steps(2) infinite;
-  }
   
 .my_name::selection {
     background-color: orange;
@@ -72,30 +45,7 @@ header  #btn-color:hover {
     color: white;
 }
 
-
-  @keyframes none {
-    100% {
-        display: none;
-    }
-  }
-
-  @keyframes blink {
-    0%  { visibility: hidden;}
-    100%  { visibility: visible;}
-  }
-  @keyframes print {
-    0% { content: 'L'}
-    10% { content: 'Lo'}
-    20% { content: 'Loa'}
-    30% { content: 'Load'}
-    40% { content: 'Loadi'}
-    50% { content: 'Loadin'}
-    60% { content: 'Loading'}
-    70% { content: 'Loading.'}
-    80% { content: 'Loading..'}
-    90% , 100% { content: 'Loading...'}
-  }
-
+ 
 .for-anim {
     animation: animNavs 1s ease;
 }
@@ -111,7 +61,7 @@ header  #btn-color:hover {
 }
 @keyframes animNav {
     from {
-        transform: translateY(50px);
+        transform: translateY(-50px);
         opacity: .1;
         z-index: 1;
     }
@@ -121,6 +71,21 @@ header  #btn-color:hover {
         z-index: 1;
     }
 }
+.my_menu {
+    animation: 1s ease my_menu;
+}
+@keyframes my_menu {
+    0% {
+        height: 1px;
+        opacity: 0.1;
+    }
+    100% {
+        height: 100px;
+        opacity: 1;
+    }
+}
+
+
 @keyframes slide-home {
     from {
         transform: translateX(-200px);
@@ -175,6 +140,7 @@ header  #btn-color:hover {
 .slide-for {
     animation: slide-for 1.7s ease;
 }
+
 @keyframes slide-for {
     from {
         transform: translateX(-200px);
@@ -210,8 +176,17 @@ header  #btn-color:hover {
         overflow: hidden;
     }
 }
-/* @media only screen and (min-width: 768px) {
-    .btns > #aioutlineClose {
-        display: block;
+.slide-table {
+    animation: 0.6s slide-table ease;
+}
+
+@keyframes slide-table {
+    from {
+        transform: translateX(-250px);
+        opacity: 0.1;
     }
-} */
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
