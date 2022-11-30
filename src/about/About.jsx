@@ -1,44 +1,54 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Navbar from '../navbar/Navbar'
+import Navbar from '../navbar/navbar';
 import MyImage from '../assets/about.jpg'
-import { FaTelegram } from 'react-icons/fa'
-import { AiFillInstagram, AiOutlineInstagram } from 'react-icons/ai'
-import { RiWhatsappFill } from 'react-icons/ri'
-import { AiFillHeart } from 'react-icons/ai'
+import { Link } from 'react-router-dom';
+import { AiOutlineWhatsApp } from 'react-icons/ai';
+import { FaTelegramPlane } from 'react-icons/fa'
+import { BsFacebook, BsInstagram } from 'react-icons/bs'
+import { SlScreenSmartphone } from 'react-icons/sl'
+
 
 const About = () => {
     return (
         <>
             <Navbar />
-            <div className='md:flex p-10 md:mr-[100px] md:ml-[100px] md:mt-7 justify-around rounded-xl  md:h-auto'>
-                {/* for Image */}
-                <div className="mt-0 mb-3 md:mb-1 slide-home-content">
-                    <img src={ MyImage } width="350" alt="My Image" title='Biloliddin' className='rounded-3xl md:w-[660px]' />
+            <div className="rounded-3xl bg-zinc-100 flex justify-center flex-col md:flex-row md:justify-around m-5 p-5">
+                <div className="slide-1 text-content">
+                    <h1 className='text-3xl font-bold mt-2 mb-2 text-center'>Hi, I'm Biloliddin!</h1>
+                    <hr className='bg-indigo-700 mb-2' />
+                    <p className='p-3 m-2'><i>Hey, I'm Biloliddin Shokirhojaev 21 old. I'm Front-End Web-Developer, my skills - Html5, Css3 JS, React.js and Django REST</i></p>
+                    <div className="social-nets w-[98%] h-[100px] m-3 rounded-md flex justify-center items-center flex-col">
+                        <li className='w-[100%] h-[50px] bg-red-500 flex justify-center items-center rounded-xl whatsapp'>
+                            <Link to="+992911076776" className='text-[18px]'>
+                                <AiOutlineWhatsApp className='inline-block text-2xl pb-1 mr-1.5' /><span>Whatsapp</span>    
+                            </Link>
+                        </li>
+                        <li className='w-[100%] h-[50px] bg-red-500 flex justify-center items-center rounded-xl telegram mt-2'>
+                            <Link to="https://t.me/Biloliddin_Master" className='text-[18px]'>
+                                <FaTelegramPlane className='inline-block text-2xl pb-1 text-white mr-1.5' /><span className='text-white'>Telegram</span>    
+                            </Link>
+                        </li>
+                    </div>
+                    <hr className='bg-indigo-700 mb-5 mt-7' />
                 </div>
-                {/* for deskription */}
-                <div className="ml-1 mt-2 p-3 md:p-1 md:mt-0 bg-zinc-200 rounded-3xl slide-home-content-2">
-                    
-                    {/* Text name */}
-                    <h1 className='slide-home-title  md:text-3xl md:mt-3 md:ml-4 ml-[5px] mr-[5px] text-[18px] mb-1 font-bold my_name'>Hey, I`m Biloliddin Shokirhojaev</h1>
 
-                    {/* text description */}
-                    <div className="slide-home-desc ml-[5px] mr-[5px] mt-2 mb-4 md:ml-5 md:mt-6 my-description">I'm Biloliddin, Frontent Web-Developer in React-js and Back-end in Djando-REST.
-                        I'm 21-old, live in Dushanbe-Tajikistan <AiFillHeart className='inline-block text-red-600' />
-                        <p className='md:blur-sm md:hover:blur-0'><i>
-                            Recent Computer Science graduate with hands-on experience. Took part in 6-month-long Agilie development process project, working with:
-                            <b> JavaScript Html5, Css3, Ajax, Rest, React and React Vite. </b></i></p>
-                    </div>
-                    <div className="flex justify-center md:justify-start md:ml-6 md:mt-5">
-                        <ul className='flex justify-start'>
-                            <li className='ml-5'><Link to="#"><FaTelegram className='md:text-4xl text-2xl       text-blue-600 md:mr-5 mr-2 hover:border-b-2 hover:border-blue-600'/></Link></li>
-                            <li className='ml-5'><Link to="#"> <AiFillInstagram className='md:text-4xl text-2xl text-red-700 md:mr-5 md:ml-5 mr-2 hover:border-b-2 hover:border-red-700'/></Link></li>
-                            <li className='ml-5'><Link to="#"> <RiWhatsappFill className='md:text-4xl text-2xl  text-green-600 md:mr-5 md:ml-5 mr-2 hover:border-b-2 hover:border-green-600'/></Link></li>
-                        </ul>
-                    </div>
+                <div className="slide-2 ml-[18px] md:ml-0">
+                    <img className='rounded-xl w-[280px] md:w-[350px]' src={ MyImage } alt="My Image"/>
                 </div>
+            </div>
+            <div className="slide-3 flex flex-row justify-center items-center h-[100px] bg-zinc-100 m-5 p-5 rounded-3xl">
+                <li className='m-2 cursor-pointer'>
+                    <Link to="#"><BsFacebook className='text-2xl text-blue-700' /></Link>
+                </li>
+                <li className='m-2 cursor-pointer'>
+                    <Link to="#"><BsInstagram className='text-2xl text-red-500' /></Link>
+                </li>
+                <li className='m-2 cursor-pointer'>
+                    <Link to="#"><SlScreenSmartphone className='text-2xl' /></Link>
+                </li>
             </div>
         </>
     )
 }
+
 export default About

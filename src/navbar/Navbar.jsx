@@ -1,49 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import MyImage from '../images/profille.jpg';
+import { ImFacebook, ImTelegram, ImWhatsapp } from 'react-icons/im'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import { useState } from 'react';
-// import MyLogo from '../assets/profile-2.jpg';
+
+
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false)
-    const toggle = () => setIsOpen(!isOpen)
+
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
+
     return (
         <>
-           <header className="mt-[2px] w-full md:h-[80px] h-[60px] bg-transparent drop-shadow-xl md:flex flex md:justify-around justify-between md:flex-row items-center animNav">
-                <div className="logo ml-4 md:mt-[1px]">
-                    <Link to="/" className='md:text-3xl text-xl font-bold hover:text-blue-600 transition'>DDSTDT.tj</Link>
-                </div>
-                {/* Nav Section  */}
-                <div className="navs mt-1.5">
-                    <nav className="md:block hidden">
-                        <ul className="flex">
-                            <li className='md:text-xl transition text-md hover:text-blue md:hover:underline pl-[15px]'><Link to="/">Home</Link></li>
-                            <li className='md:text-xl transition text-md hover:text-blue md:hover:underline pl-[15px]'><Link to="/api/">Api</Link></li>
-                            <li className='md:text-xl transition text-md hover:text-blue md:hover:underline pl-[15px] pr-[15px]'><Link to="/lists/">Design-4</Link></li>
-                            <li className='md:text-xl transition text-md hover:text-blue md:hover:underline pl-[15px] pr-[15px]'><Link to="/about/">About</Link></li>
-                            {/* <li> <img src={ MyLogo } alt="Logo-image" title="Biloliddin" width="45" className='rounded-full absolute top-[15px] transition hover:scale-110 cursor-pointer' /> </li> */}
-                        </ul>
-                    </nav>
-                </div>
-                <div className="md:hidden block mr-4 mt-3">
-                    { !isOpen ? 
-                       <button onClick={toggle}><AiOutlineMenu className='text-2xl'/> </button> : <button onClick={toggle}><AiOutlineClose  className='text-2xl' /></button>
-                    }
-                </div>
+           <header className="slide-top sticky h-[80px] w-[100%] bg-zinc-100 drop-shadow-lg p-1 flex md:flex-row justify-between items-center
+                        md:justify-around
+           ">
+            <div className="logo p-2">
+                <Link to="#"><span className='my__letter text-2xl font-bold md:text-3xl hover:text-indigo-700'>Bilol.tj</span></Link>
+            </div>
+            <nav className="nav-menu hidden md:block">
+                <ul className="nav-items md:flex md:justify-between">
+                    <li className='nav-item mr-5 px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/">Home</Link></li>
+                    <li className='nav-item mr-5 px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/contact">Contact</Link></li>
+                    <li className='nav-item mr-5 px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="#">Jurnal</Link></li>
+                    <li className='nav-item mr-5 px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/about">About</Link></li>
+                </ul>
+            </nav>
+            <div className="btn hidden md:block">
+                <button className='md:px-5 md:py-2 border border-indigo-500 rounded-md ml-2 text-black hover:bg-indigo-500 hover:text-white transition'>Sign In</button>
+                <button className='md:px-5 md:py-2 border border-indigo-500 rounded-md ml-2 text-white hover:text-black hover:bg-transparent bg-indigo-500 transition'>Sign Up</button>
+            </div>
+            <div className="nav-sections md:hidden block p-2">
+                <button onClick={ toggle }>
+                    { !isOpen ? <AiOutlineMenu className='text-3xl' />: <AiOutlineClose className='text-3xl' />}
+                </button>
+            
+            </div>
            </header>
-           { isOpen && <hr /> }
-                <div className="transition bg-zinc-100 pb-0 drop-shadow-xl animNav">
-                    {   isOpen &&
-                        <nav className="for-anim">
-                            <ul className="flex flex-col items-center p-2">
-                                <li className='md:text-xl text-md transition hover:text-blue hover:text-[17px] mt-2'><Link to="/">Home</Link></li>
-                                <li className='md:text-xl text-md transition hover:text-blue hover:text-[17px] mt-2'><Link to="/api/">Api</Link></li>
-                                <li className='md:text-xl transition text-md hover:text-blue md:hover:underline pl-[15px] pr-[15px]'><Link to="/lists/">Design-4</Link></li>
-                                <li className='md:text-xl text-md transition hover:text-blue hover:text-[17px] mt-2'><Link to="/about">About</Link></li>
-                            </ul>
-                        </nav>
-                    }
+           { isOpen &&
+            <nav className="nav-menu bg-zinc-100 drop-shadow-lg pb-2 text-center slide-toggle-menu">
+                <ul className="nav-items md:flex md:justify-between">
+                    <li className='nav-item px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/">Home</Link></li>
+                    <li className='nav-item px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/contact">Contact</Link></li>
+                    <li className='nav-item px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="#">Jurnal</Link></li>
+                    <li className='nav-item px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/about">About</Link></li>
+                </ul>
+                <hr className='mb-1 mt-2 bg-indigo-600' />
+                <div className="flex flex-col p-2">
+                    <button className='w-full h-[45px] border border-indigo-500 rounded-md text-black hover:bg-indigo-500 hover:text-white transition'>Sign In</button>
+                    <button className='w-full h-[45px]  mt-3 border border-indigo-500 rounded-md text-white hover:text-black hover:bg-transparent bg-indigo-500 transition'>Sign Up</button>
                 </div>
+            </nav>
+            
+           }
+           
         </>
     )
 }
