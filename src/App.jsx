@@ -2,7 +2,6 @@ import React from 'react'
 import { Route, Router, Routes, BrowserRouter } from 'react-router-dom'
 import Contact from './contact/contact'
 import Home from './home/Home'
-import Works from './works/works'
 import About from './about/about'
 
 function App() {
