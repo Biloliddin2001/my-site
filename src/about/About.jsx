@@ -12,11 +12,15 @@ const About = () => {
     return (
         <>
             <Navbar />
-            <div className="rounded-3xl bg-zinc-100 flex justify-center flex-col md:flex-row md:justify-around m-5 p-5">
-                <div className="slide-1 text-content">
-                    <h1 className='text-3xl font-bold mt-2 mb-2 text-center'>Hi, I'm Biloliddin!</h1>
+            <div className="rounded-3xl bg-zinc-100 flex justify-center flex-col md:flex-row md:justify-around m-5 p-5
+                md:p-0 md:m-10
+            ">
+                <div className="slide-1 text-content md:border-r-2 md:w-1/2 md:p-[60px]">
+                    <h1 className='text-3xl font-bold mt-2 mb-2 text-center md:text-[40px] md:pb-3'>Hi, I'm Biloliddin!</h1>
                     <hr className='bg-indigo-700 mb-2' />
                     <p className='p-3 m-2'><i>Hey, I'm Biloliddin Shokirhojaev 21 old. I'm Front-End Web-Developer, my skills - Html5, Css3 JS, React.js and Django REST</i></p>
+
+                        {/* Buttons */}
                     <div className="social-nets w-[98%] h-[100px] m-3 rounded-md flex justify-center items-center flex-col">
                         <li className='w-[100%] h-[50px] bg-red-500 flex justify-center items-center rounded-xl whatsapp'>
                             <Link to="+992911076776" className='text-[18px]'>
@@ -29,10 +33,10 @@ const About = () => {
                             </Link>
                         </li>
                     </div>
-                    <hr className='bg-indigo-700 mb-5 mt-7' />
+                    <hr className='bg-indigo-700 mb-5 mt-7 md:hidden' />
                 </div>
-
-                <div className="slide-2 ml-[18px] md:ml-0">
+                {/* Image Content */}
+                <div className="slide-2 ml-[18px] md:ml-0 md:p-10">
                     <img className='rounded-xl w-[280px] md:w-[350px]' src={ MyImage } alt="My Image"/>
                 </div>
             </div>
