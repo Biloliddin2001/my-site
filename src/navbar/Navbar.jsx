@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import MyImage from '../images/profille.jpg';
-import { ImFacebook, ImTelegram, ImWhatsapp } from 'react-icons/im'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 
