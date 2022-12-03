@@ -77,11 +77,11 @@ const Navbar = () => {
            </header>
            { isOpen &&
             <nav className="nav-menu bg-zinc-100 drop-shadow-lg pb-2 fixed h-[860px] w-full slide-toggle-menu overflow-y-auto">
-                <ul className="nav-items md:flex md:justify-between pl-5">
-                    <li className='nav-item px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/">Home</Link></li><hr />
-                    <li className='nav-item px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/my_skills">My Skills</Link></li><hr />
-                    <li className='nav-item px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/password_generator">Pass_Generator</Link></li><hr />
-                    <li className='nav-item px-4 py-2 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/about">About</Link></li><hr />
+                <ul className="nav-items md:flex md:justify-between p-3">
+                    <li className='nav-item px-4 py-2 pl-6 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/">Home</Link></li><hr />
+                    <li className='nav-item px-4 py-2 pl-6 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/my_skills">My Skills</Link></li><hr />
+                    <li className='nav-item px-4 py-2 pl-6 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/password_generator">Pass_Generator</Link></li><hr />
+                    <li className='nav-item px-4 py-2 pl-6 rounded-md hover:text-white transition text-black md:text-1xl hover:bg-indigo-500'><Link to="/about">About</Link></li><hr />
                 </ul>
                 {/* <hr className='mb-1 mt-2 bg-indigo-600' /> */}
                 <div className="flex flex-col p-2">

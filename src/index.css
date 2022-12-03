@@ -32,8 +32,8 @@ body {
 
 
 .slide-toggle-menu {
-    animation: 0.25s ease animToggle;
-    -webkit-animation: 0.25s ease animToggle;
+    animation: 0.43s ease animToggle;
+    -webkit-animation: 0.43s ease animToggle;
 }
 li {
     list-style: none;
