@@ -6,6 +6,7 @@ import { AiOutlineWhatsApp } from 'react-icons/ai';
 import { FaTelegramPlane } from 'react-icons/fa'
 import { BsFacebook, BsInstagram } from 'react-icons/bs'
 import { SlScreenSmartphone } from 'react-icons/sl'
+import Footer from '../footer/footer';
 
 
 const About = () => {
@@ -34,13 +35,33 @@ const About = () => {
                         </li>
                     </div>
                     <hr className='bg-indigo-700 mb-5 mt-7 md:hidden' />
+                <div className="my-text hidden md:block mt-3">
+                    <h2 className='text-center pt-3 font-bold'>Junior Software Engineer</h2>
+                    <p className='p-2'>
+                        <i>
+                            Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
+                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                        </i>
+                    </p>
+                </div>
                 </div>
                 {/* Image Content */}
                 <div className="slide-2 ml-[18px] md:ml-0 md:p-10">
                     <img className='rounded-xl w-[280px] md:w-[350px]' src={ MyImage } alt="My Image"/>
                 </div>
+                <div className="my-text md:hidden mt-3">
+                    <h2 className='text-center pt-3 font-bold'>Junior Software Engineer</h2>
+                    <p className='p-2'>
+                        Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
+                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </p>
+                </div>
             </div>
-            <div className="slide-3 flex flex-row justify-center items-center h-[100px] bg-zinc-100 m-5 p-5 rounded-3xl">
+
+
+            <div className="slide-3 flex flex-row justify-center items-center h-[100px] bg-zinc-100 md:m-8 m-5 p-5 rounded-3xl">
                 <li className='m-2 cursor-pointer'>
                     <Link to="#"><BsFacebook className='text-2xl text-blue-700' /></Link>
                 </li>
@@ -51,6 +72,8 @@ const About = () => {
                     <Link to="#"><SlScreenSmartphone className='text-2xl' /></Link>
                 </li>
             </div>
+
+            {/* <Footer /> */}
         </>
     )
 }

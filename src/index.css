@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body {
+    overflow-y: none;
+}
 .my__letter {
     transition: 0.4s;
 }
@@ -15,12 +18,22 @@
     letter-spacing: 1px;
 }
 .slide-top {
+    z-index: 2;
     animation: slide-top 0.4s ease;
     -webkit-animation: slide-top 0.4s ease;
 }
+.nav-menu {
+    z-index: 2;
+}
+
+
+
+
+
+
 .slide-toggle-menu {
-    animation: 0.5s ease animToggle;
-    -webkit-animation: 0.5s ease animToggle;
+    animation: 0.25s ease animToggle;
+    -webkit-animation: 0.25s ease animToggle;
 }
 li {
     list-style: none;
@@ -52,7 +65,22 @@ li {
     -webkit-animation: slide-4 1.4s ease;
 }
 
+@keyframes scrol {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+        background-image: linear-gradient(to left, red, blue);
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
+#input__generate::selection {
+   background-color: #6366F1;
+}
 
 @keyframes slide-top {
     from {
@@ -66,8 +94,12 @@ li {
 }
 @keyframes animToggle {
     from {
-        transform: translateY(-60px);
+        transform: translateY(-30px);
         opacity: 0;
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -o-transform: translateY(-30px);
 }
     to {
         transform: translateX(0);
@@ -116,4 +148,23 @@ li {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+/* Fade IN */
+@keyframes FadeIn {
+    from {
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        opacity: 1;
+}
 }
